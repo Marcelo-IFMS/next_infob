@@ -1,6 +1,10 @@
+
 export default function Home() {
   return <>
-    Bem Vindos
-    </>
-    
+    <h1>
+      {4+2}
+      <p>Bem Vindos</p>
+
+    </h1>
+  </>
 }
