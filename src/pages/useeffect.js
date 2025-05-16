@@ -4,16 +4,18 @@ export default function Useeffect() {
     const [numero, setNumero] = useState(0);
     setTimeout(() => {
         setNumero(numero + 1);
-    },3000)
+    }, 3000)
 
     useEffect(() => {
-        document.title = `UseEffect ${numero}`;
-    },[numero])
+        if (numero > 0) {
+            document.title = `UseEffect ${numero}`;
+        }
+    }, [numero])
 
     return <>
         <div className="text-center">
             <h1> useEffect</h1>
-            <h2>{numero === 0 ? <img src={"./loading-2.gif"} height={"50px"} width={"100px"}/> : numero}</h2>
+            <h2>{numero === 0 ? <img src={"./loading-2.gif"} height={"50px"} width={"100px"} /> : numero}</h2>
         </div>
     </>
 }
