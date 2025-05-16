@@ -6,14 +6,15 @@ export default function Usestate() {
     </h1><p className="text-center">
             Cliques {state} vezes <br />
             <button className="btn btn-dark"
-                onClick={() => setState(soma1(state))}>Clique aqui</button>
+                onClick={async () => setState(await soma1(state))}>Clique aqui</button>
         </p>
     </>
-    function soma1(state) {
-        state++
-        console.log(state)
+}
+function soma1(statesoma) {
+    statesoma++;
+    return new Promise((resolve) => {
         setTimeout(() => {
-            return state
+            resolve(statesoma)
         }, 1000);
-    }
+    })
 }
