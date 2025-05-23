@@ -10,7 +10,7 @@ export default function Page() {
             {Array.isArray(subnoticia)
             ?subnoticia.map((valor,indice)=>
             <h2>Indice Vetor: <b>{indice}</b>, Valor Vetor:<b>{valor}</b></h2>)
-            :"Não encontrado"}
+            :"Não encontrado nenhum site"}
         </Container>
     </>
 }
