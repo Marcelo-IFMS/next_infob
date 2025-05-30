@@ -34,7 +34,7 @@ export default function Cadnoticia() {
                                 <option value="6">Entreterimento</option>
                             </Form.Select>
                         </Form.Group>
-                        <Button variant="primary" type="submit">
+                        <Button variant="success" type="submit">
                             Submit
                         </Button>
                     </Form>
