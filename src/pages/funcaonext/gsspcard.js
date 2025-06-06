@@ -1,5 +1,6 @@
 import { Card, Col, Container, Row } from "react-bootstrap"
 import { noticias } from "../api/noticias/noticias"
+import {styles} from '../../styles/'
 
 export async function getServerSideProps() {
     // Fetch data from external API
@@ -26,7 +27,7 @@ export default function Gsspcard({ repo }) {
                                 <Card.Header className="text-center fw-bold"> {noticia.titulonoticia}</Card.Header>
                                 <Card.Body>
                                     <Card.Title className="text-capitalize">{noticia.tiponoticia}</Card.Title>
-                                    <Card.Text>{noticia.conteudonoticia}</Card.Text>
+                                    <Card.Text className={`${styles.textCenter}`}>{noticia.conteudonoticia}</Card.Text>
                                 </Card.Body>
                                 <Card.Footer>{noticia.datahoracadastro}</Card.Footer>
                             </Card>
