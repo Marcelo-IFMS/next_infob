@@ -8,7 +8,6 @@ export async function getServerSideProps() {
   return { props: { noticias: repo } }
 }
 export default function Home({ noticias }) {
-  console.log("noticias", noticias);
   return <>
     <Container>
       <Row xs={1} md={3}>
