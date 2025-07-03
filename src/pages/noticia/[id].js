@@ -10,10 +10,8 @@ export async function getServerSideProps(req) {
 export default function Page({ noticia }) {
     return <>
         <Container className="text-center">
-            <Cards idnoticia={noticia.idnoticia}
-                conteudonoticia={noticia.conteudonoticia}
-                titulonoticia={noticia.titulonoticia}
-                datahoracadastro={noticia.datahoracadastro}
+            <Cards idnoticia={noticia.idnoticia} conteudonoticia={noticia.conteudonoticia}
+                titulonoticia={noticia.titulonoticia} datahoracadastro={noticia.datahoracadastro}
                 tiponoticia={noticia.tiponoticia} />
         </Container>
     </>
