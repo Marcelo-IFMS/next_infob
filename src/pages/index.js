@@ -11,7 +11,7 @@ export default function Home({ noticias }) {
   return <>
     <Container>
       <Row xs={1} md={3}>
-        Main
+        Main index
         {Array.isArray(noticias) ?
           noticias.map(noticia => (
             <Cards idnoticia={noticia.idnoticia}
